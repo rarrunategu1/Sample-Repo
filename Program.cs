@@ -6,7 +6,10 @@ namespace Hello_World
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello!");
+            Bank bank = new Bank();
+            bank._location = "Kansas";
+
+            Console.WriteLine(bank._location);
         }
     }
 }
