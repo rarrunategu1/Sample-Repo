@@ -50,6 +50,9 @@ namespace Hello_World{
       if (precalculatedBalance >= 0)
       {
         Console.WriteLine("Your current balance is ${0:0.00}.  There is a fee of ${1:0.00} for your withdrawal.  Your balance after your withdrawal of ${2:0.00} is ${3:0.00}.", balance, bankFee, withdrawalAmount, (balance - withdrawalAmount- bankFee));
+
+        balance = balance - withdrawalAmount - bankFee;
+        Console.WriteLine("New balance is ${0:0.00}", balance);
       }
       else
       {
