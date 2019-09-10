@@ -10,6 +10,8 @@ namespace Hello_World
             bank._location = "Kansas";
 
             Console.WriteLine(bank._location);
+
+            bank.MakeDeposit();
         }
     }
 }

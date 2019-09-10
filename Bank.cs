@@ -6,6 +6,11 @@ namespace Hello_World{
 
     public string _location {get; set;}
 
+    public void MakeDeposit()
+    {
+      Console.WriteLine("Your deposit transaction has been completed.");
+    }
+
   }
 
 }
