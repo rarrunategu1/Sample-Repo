@@ -6,12 +6,14 @@ namespace Hello_World
     {
         static void Main(string[] args)
         {
-            Bank bank = new Bank(123456789);
-            bank._location = "Kansas";
+            Bank bankTrans1 = new Bank(123456789);
+            Bank bankTrans2 = new Bank(23.00);
+            bankTrans1._location = "Kansas";
 
-            Console.WriteLine(bank._location);
+            Console.WriteLine(bankTrans1._location);
 
-            bank.MakeDeposit();
+            bankTrans1.MakeDeposit();
+            bankTrans2.MakeWithdrawal();
         }
     }
 }
